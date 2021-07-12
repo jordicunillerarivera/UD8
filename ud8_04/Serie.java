@@ -15,6 +15,7 @@ public class Serie {
 	final private boolean cEntregado = false;
 	
 	// Constructores
+	
 		// Constructor vacio
 	public Serie() {
 		this.titulo = "";
@@ -23,6 +24,7 @@ public class Serie {
 		this.genero = "";
 		this.creador = "";
 	}
+	
 		// Constructor minimo
 	public Serie(String titulo, String creador) {
 		this.titulo = titulo;
@@ -31,6 +33,7 @@ public class Serie {
 		this.genero = "";
 		this.creador = creador;
 	}
+	
 		// Constructor completo
 	public Serie(String titulo, int numTemporadas, boolean entregado, String genero, String creador) {
 		this.titulo = titulo;
@@ -39,6 +42,7 @@ public class Serie {
 		this.genero = genero;
 		this.creador = creador;
 	}
+	
 		// Metodo para ver por pantalla los atributos del objeto
 	@Override
 	public String toString() {
