@@ -4,10 +4,10 @@ public class Electrodomestico {
 	
 	// Atributos
 	
-	private double precioBase;
-	private String color;
-	private char consumoElectrico;
-	private int peso;
+	protected double precioBase;
+	protected String color;
+	protected char consumoElectrico;
+	protected int peso;
 	
 	// Constantes
 	
