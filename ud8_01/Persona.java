@@ -15,7 +15,7 @@ public class Persona {
 	final char sex = 'H';
 	
 	// Constructores
-	
+		// Constructor vacio
 	public Persona() {
 		this.nombre = "";
 		this.edad = 0;
@@ -23,7 +23,7 @@ public class Persona {
 		this.peso = 0;
 		this.altura = 0;
 	}
-	
+		// Constructor minimo
 	public Persona(String nombre, int edad, char sexo) {
 		this.nombre = nombre;
 		this.edad = edad;
@@ -31,7 +31,7 @@ public class Persona {
 		this.peso = 0;
 		this.altura = 0;
 	}
-
+		// Constructor completo
 	public Persona(String nombre, int edad, String DNI, char sexo, double peso, double altura) {
 		this.nombre = nombre;
 		this.edad = edad;

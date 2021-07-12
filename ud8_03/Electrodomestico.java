@@ -17,37 +17,37 @@ public class Electrodomestico {
 	final private int cPeso = 5;
 	
 	// Constructores
-	
+		// Constructor vacio
 	public Electrodomestico() {
 		this.precioBase = cPrecioBase;
 		this.color = cColor;
 		this.consumoElectrico = cConsumoElectrico;
 		this.peso = cPeso;
 	}
-
+		// Constructor minimo
 	public Electrodomestico(double precioBase, int peso) {
 		this.precioBase = precioBase;
 		this.peso = peso;
 		this.color = cColor;
 		this.consumoElectrico = cConsumoElectrico;
 	}
-
+		// Constructor completo
 	public Electrodomestico(double precioBase, String color, char consumoElectrico, int peso) {
 		this.precioBase = precioBase;
-		this.color = comprovarColor(color);
-		this.consumoElectrico = comprovarLetra(consumoElectrico);
+		this.color = comprobarColor(color);
+		this.consumoElectrico = comprobarLetra(consumoElectrico);
 		this.peso = peso;
 	}
 	
 	// Metodo
-	
+		// Metodo para ver por pantalla los atributos del objeto
 	@Override
 	public String toString() {
 		return "Electrodomestico [precioBase=" + precioBase + ", color=" + color + ", consumoElectrico="
 				+ consumoElectrico + ", peso=" + peso + "]";
 	}
-	
-	public static String comprovarColor(String color) {
+		// Metodo para comprobar que el color sea correcto
+	public static String comprobarColor(String color) {
 		
 		color = color.toLowerCase();
 		String colorFinal;
@@ -77,8 +77,8 @@ public class Electrodomestico {
 		return colorFinal;
 		
 	}
-
-	public static char comprovarLetra(char consumoElectrico) {
+		// Metodo para comprobar que la letra sea correcta
+	public static char comprobarLetra(char consumoElectrico) {
 		
 		char letra;
 		

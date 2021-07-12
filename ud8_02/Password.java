@@ -11,14 +11,14 @@ public class Password {
 	final private String key = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	
 	// Constructor
-	
+		// Constructor vacio
 	public Password() {
 		this.longitud = 8;
 		
 		this.contraseña = generador(key, this.longitud);
 		
 	}
-	
+		// Constructor completo
 	public Password(int longitud) {
 		this.longitud = longitud;
 		
@@ -27,7 +27,7 @@ public class Password {
 	}
 
 	// Metodos
-	
+		// Metodo para generar una contraseña aleatoria
 	private static String generador(String key, int longitud) {
 		String pswd = "";
  
